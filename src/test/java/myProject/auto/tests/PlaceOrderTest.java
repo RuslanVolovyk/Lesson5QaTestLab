@@ -32,6 +32,7 @@ public class PlaceOrderTest extends BaseTest {
         actions.paymentMethod();
         actions.verifyOrderData();
         actions.checkCount();
+        Reporter.log("Test Passed");
 
     }
 }

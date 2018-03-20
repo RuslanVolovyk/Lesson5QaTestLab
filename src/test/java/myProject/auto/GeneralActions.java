@@ -48,14 +48,12 @@ public class GeneralActions {
 
     public void checkSiteVersion(String url) {
         driver.get(Properties.getBaseUrl());
-
     }
 
     public void createdOrderMethod() {
         driver.findElement(createOrder).click();
 
     }
-
 
     public void openRandomProduct() {
         driver.get(Properties.getBaseUrl());
@@ -105,19 +103,14 @@ public class GeneralActions {
     }
 
     public void verifyOrderData() {
-        Assert.assertEquals(driver.findElement(messageText).getText(),
-                Utils.getConfirmOrderMessage());
+        Assert.assertEquals(driver.findElement(messageText).getText(), Utils.getConfirmOrderMessage());
         //test always failed
-//        Assert.assertEquals(driver.findElement(productNameText).getText(),
-//               Utils.getProductName());
-        Assert.assertEquals(driver.findElement(productCountText).getText(),
-                Utils.getProductCount());
-        Assert.assertEquals(driver.findElement(productPriceText).getText(),
-                Utils.getProductPrice());
+//        Assert.assertEquals(driver.findElement(productNameText).getText(),Utils.getProductName());
+        Assert.assertEquals(driver.findElement(productCountText).getText(), Utils.getProductCount());
+        Assert.assertEquals(driver.findElement(productPriceText).getText(), Utils.getProductPrice());
     }
 
     public void checkCount() {
-
-
+        //don't understand this step.
     }
 }
